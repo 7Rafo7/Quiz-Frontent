@@ -1,0 +1,40 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "tsconfigRootDir": "./tsconfig.json"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "tabWidth": 2
+      }
+    ],
+    "no-console": "warn",
+    "no-useless-concat": "error",
+    "import/no-anonymous-default-export": "error",
+    "default-case": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-curly-brace-presence": "error",
+    "jsx-a11y/img-redundant-alt": "off",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "off"
+  }
+}
