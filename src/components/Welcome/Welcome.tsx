@@ -1,11 +1,12 @@
-import {Container} from "react-bootstrap";
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Welcome = () => {
   return (
-    <Container className={'mt-5'}>
+    <Container className="mt-5">
       <h1>Quiz for Tutor platform</h1>
     </Container>
-  )
-}
+  );
+};
 
 export default Welcome;
